@@ -3,7 +3,17 @@ import React from "react";
 import { Tabs } from "expo-router";
 
 const Layout = () => {
-	return <Tabs />;
+	return (
+		<Tabs screenOptions={{}}>
+			<Tabs.Screen
+				name="one"
+				options={{
+					title: "home",
+					headerTitle: "home",
+				}}
+			/>
+		</Tabs>
+	);
 };
 
 export default Layout;

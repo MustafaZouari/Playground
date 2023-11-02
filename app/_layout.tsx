@@ -7,7 +7,14 @@ const Layout = () => {
 		<Stack>
 			<Stack.Screen name="index" options={{ title: "Login" }} />
 			<Stack.Screen name="register" options={{ title: "register" }} />
-			{/* <Stack.Screen name="(tabs)" options={{ title: "tabs" }} /> */}
+			<Stack.Screen
+				name="(app)/animatedBackground"
+				options={{ title: "Background animation" }}
+			/>
+			<Stack.Screen
+				name="(tabs)"
+				options={{ headerShown: false, headerTitle: "" }}
+			/>
 		</Stack>
 	);
 };
